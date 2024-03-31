@@ -1,0 +1,55 @@
+<div class="body">
+
+
+    <div class="row">
+        <div class="content">
+        <form class="form" action="#" method="post" [formGroup]="formulario" (ngSubmit)="onSubmit()">
+            <div class="form-group">
+                <label for="nombre_producto">Nombre del Producto:</label>
+                <input type="text" id="nombre_producto" name="nombre_producto" placeholder="Ejemplo: Producto" required  [(ngModel)]="formData.nombre_producto">
+            </div>
+        
+            <div class="form-group">
+                <label for="precio">Precio:</label>
+                <input type="text" id="precio" name="precio" placeholder="Ejemplo: 100€" required  [(ngModel)]="formData.precio">
+            </div>
+        
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <textarea id="descripcion" name="descripcion" placeholder="Ejemplo: Este es un producto increíble..."
+                    required [(ngModel)]="formData.descripcion"></textarea>
+            </div>
+        
+            <div class="form-group">
+                <label for="ruta_imagen">Ruta de la Imagen:</label>
+                <input type="text" id="ruta_imagen" name="ruta_imagen" placeholder="Ejemplo: https://ejemplo.com/imagen.jpg"
+                    required [(ngModel)]="formData.ruta_imagen">
+            </div>
+        
+            <div class="form-group">
+                <label for="opiniones">Opiniones:</label>
+                <input type="text" id="opiniones" name="opiniones" placeholder="Ejemplo: Excelente producto, lo recomiendo..."
+                    required [(ngModel)]="formData.opiniones">
+            </div>
+        
+            <button type="submit" value="Enviar">Guardar</button>
+        </form>
+
+        <div class="ficha">
+            <div class="preview-image">
+            <img [src]="formData.ruta_imagen" alt=""></div>
+            <h3>{{ formData.nombre_producto }}</h3>
+            <p class="description">{{ formData.descripcion }}</p>
+            <p class="price">{{ formData.precio }}</p>
+            <p class="opinion">{{ formData.opiniones}}</p>
+
+
+        </div>
+
+        </div>
+
+
+
+
+
+</div>

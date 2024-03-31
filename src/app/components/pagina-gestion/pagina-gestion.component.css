@@ -1,0 +1,121 @@
+.body {
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+    margin-top: 140px;
+    margin-bottom: 72px;
+    max-width: 1200px;
+    width: 600px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+
+ .container {
+     width: 800px;
+     margin: 0 auto;
+     padding: 20px;
+     border: 1px solid #ccc;
+     border-radius: 8px;
+ }
+
+ .form-group{
+   display: flex;
+   flex-direction: start;
+   flex-direction: column;
+   justify-content: start;
+ }
+
+ .form-group {
+     margin-bottom: 20px;
+ }
+
+
+ label {
+     display: block;
+     font-weight: bold;
+     margin-bottom: 5px;
+ }
+
+ input[type="text"],
+ textarea {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+     box-sizing: border-box;
+ }
+
+ button {
+     padding: 10px 20px;
+     background-color: #007bff;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+
+ button:hover {
+     background-color: #0056b3;
+ }
+
+ .ficha {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 395px;
+    justify-content: center;
+}
+
+
+ .ficha h3 {
+     font-size: large;
+     margin-bottom: 0;
+    margin: 0px;
+ }
+
+ .description {
+    color: gray;
+    margin: 0px;
+ }
+
+ .price {
+     font-size: 24px;
+     font-weight: 600;
+     margin: 5px;
+
+ }
+ .opinion{
+    color: gray;
+    margin: 0px;
+    font-size: small;
+
+ }
+
+ .preview-image {
+     width: 300px;
+  
+ }
+
+ .preview-image img {
+     width: 100%;
+ }
+ 
